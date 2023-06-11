@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumsService", "AlbumsService\AlbumsService.csproj", "{300942CD-46E6-4909-933D-29FEBDBE5A53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{300942CD-46E6-4909-933D-29FEBDBE5A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300942CD-46E6-4909-933D-29FEBDBE5A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300942CD-46E6-4909-933D-29FEBDBE5A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300942CD-46E6-4909-933D-29FEBDBE5A53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96D8358-D724-4A1E-8C66-BC0286101654}
+	EndGlobalSection
+EndGlobal
