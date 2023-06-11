@@ -5,4 +5,4 @@ An albums service which provides a REST API that includes CRUD operations for mu
 - C#
 - .NET 7
 - Docker
-- Swagger
+- Swagger / OpenAPI
