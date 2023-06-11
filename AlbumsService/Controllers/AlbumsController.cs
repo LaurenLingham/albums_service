@@ -6,22 +6,16 @@ namespace AlbumsService.Controllers
     [ApiController]
     public class AlbumsController : ControllerBase
     {
-        private Dictionary<int, string> _albums = new Dictionary<int, string>();
-
-        public AlbumsController()
-        {
-            _albums.Add(1, "album 1");
-            _albums.Add(2, "album 2");
-        }
+        private static Dictionary<Guid, string> _albums = new Dictionary<Guid, string>();
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public Dictionary<Guid, string> Get()
         {
-            return _albums.Values.ToList();
+            return _albums;
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Get(Guid id)
         {
             return _albums[id];
         }
@@ -29,25 +23,17 @@ namespace AlbumsService.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
-            int id;
-
-            do
-            {
-                id = new Random().Next(1000);
-            }
-            while (_albums.ContainsKey(id));
-
-            _albums.Add(id, value);
+            _albums.Add(Guid.NewGuid(), value);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(Guid id, [FromBody] string value)
         {
             _albums[id] = value;
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
             _albums.Remove(id);
         }
