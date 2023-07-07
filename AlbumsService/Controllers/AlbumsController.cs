@@ -37,5 +37,11 @@ namespace AlbumsService.Controllers
         {
             _albums.Remove(id);
         }
+
+        [HttpDelete]
+        public void DeleteAll()
+        {
+            _albums.Clear();
+        }
     }
 }
